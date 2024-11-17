@@ -11,7 +11,7 @@ big_boi_id = int(os.getenv("ID"))
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(status=discord.Status.do_not_disturb)
+    await bot.change_presence(status=discord.Status.invisible)
     print(f'{bot.user.name}#{bot.user.discriminator} has connected to Discord!')
 
 
